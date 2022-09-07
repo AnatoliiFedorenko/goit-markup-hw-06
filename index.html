@@ -365,13 +365,13 @@
                 <h2>Залиште свої дані, ми вам передзвонимо</h2>
 
                 <form class="form">
-                    <div class="form-field">
-                        <label for="name">Імʼя</label>
-                        <input class="form-input" type="text" name="name" id="name" />
+                     <label class="form-field">
+                        <span class="form-label">Імʼя</span>
+                        <input class="form-input" type="text" name="name" />
                         <svg class="form-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
-                    </div>
+                        </label>
 
                     <div class="form-field">
                         <label for="tel">Телефон</label>
@@ -391,14 +391,19 @@
 
                     <div class="form-field">
                         <label for="message">Комментар</label>
-                        <textarea class="form-input" name="feedback" id="message" rows="7" placeholder="Введіть текст"></textarea>
+                        <textarea class="form-input" name="feedback" id="message" rows="" placeholder="Введіть текст"></textarea>
                     </div>
                 </form>
 
-                <div class="policy">
-                    <input type="checkbox" name="policy" id="policy" />
-                    <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-                </div>
+                <label class="policy" >
+                    <input class="policy-input" type="checkbox" name="policy" id="policy" />
+                    <svg class="input-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-modal-check"></use>
+                    </svg>
+                    <!-- <span class="checkbox-img"></span> -->
+                   Погоджуюся з розсилкою та приймаю<span class="details"><a href="">Умови договору</a></span>
+                </label>
+                
                 
                 <button class="send-button" type="submit">Відправити</button>
             </div>
